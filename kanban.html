@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KANBAN aplikacija</title>
+
+    <link rel="stylesheet" href="./css/kanban.css">
+  </head>
+  <body>
+    <h1>KANBAN To Do lista</h1>
+    <div class="formaTask">
+      <form>
+        <input
+          type="text"
+          name="taskNaslov"
+          id="taskNaslov"
+          placeholder="Unesi naziv zadatka"
+          required
+        />
+        <input
+          type="text"
+          name="taskOpis"
+          id="taskOpis"
+          placeholder="Unesi opis zadatka"
+          required
+        />
+        <input
+          type="date"
+          name="taskDatum"
+          id="taskDatum"
+          placeholder="Unesi datum zadatka"
+          required
+        />
+
+        <input type="submit" value="+" id="dodajTask" />
+      </form>
+    </div>
+
+    <div class="kanban-board">
+      <div class="kolona">
+        <h2>Planirano</h2>
+        <div class="stavkeListe" id="planirano"></div>
+      </div>
+      <div class="kolona">
+        <h2>U toku</h2>
+        <div class="stavkeListe" id="uToku"></div>
+      </div>
+      <div class="kolona">
+        <h2>Završeno</h2>
+        <div class="stavkeListe" id="zavrseno"></div>
+      </div>
+    </div>
+
+    <script src="./js/kanban.js"></script>
+  </body>
+</html>
