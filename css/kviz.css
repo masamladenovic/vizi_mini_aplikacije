@@ -1,0 +1,54 @@
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#kviz{
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+#odgovori button{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  background-color:  rgba(255,255,255,0.3);
+}
+
+#odgovori button:hover{
+  background-color:  rgba(255,255,255,0.5);
+  color: #333;
+}
+
+#dalje{
+  background-color: #ff6b81;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+
+
+
+
+
+
